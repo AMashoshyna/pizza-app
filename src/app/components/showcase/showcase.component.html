@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="pizzas">
+  <ul>
+    <li class="col l4 m6 s12"
+    *ngFor="let pizza of pizzas">
+     <a>
+        <app-pizza-card
+        [pizza]="pizza"></app-pizza-card>
+     </a>
+    </li>
+  </ul>
+  </div>
+  </div>
+</div>
+

@@ -1,0 +1,25 @@
+<div class="container">
+  <form novalidate [formGroup]="form">
+    <label for="pizza-title">Pizza title</label>
+    <input type="text" formControlName="title" id="pizza-title" placeholder="Get your pizza a name!">
+    <label for="pizza-description">Short descripttion</label>
+    <input type="text" formControlName="description" id="pizza-description" placeholder="Short description or comment">
+    <div class="nested-form">
+      <p>Chooze pizza size</p>
+      <input type="radio" name="size" formControlName="size" id="small" value="small" checked>
+      <label for="small">Small</label>
+      <input type="radio" name="size" formControlName="size" id="medium" value="medium">
+      <label for="medium">Medium</label>
+      <input type="radio" name="size"  formControlName="size" id="large" value="large">
+      <label for="large">Large</label>
+    </div>
+    <div class="nested-form">
+      <div class="topping" *ngFor="let ingredient of toppings">
+        <img src="{{ingredient.image}}">
+        <label for="{{ingredient?.id}}">{{ingredient?.title}}
+  <input id="{{ingredient.id}}" type="checkbox">
+    </label>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,51 @@
+.container {
+    width: 50%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="radio"] {
+    display: inline-block;
+
+}
+
+label {
+
+  flex: 0 1 70%;
+  text-align: center;
+  line-height: 70px;
+  vertical-align: middle;
+  cursor: pointer;
+  
+}
+img {
+  
+  width: 20%;
+  flex: 0 1 20%;
+  
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nested-form {
+    flex: 0 1 inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+.topping {
+  display: flex;
+  flex: 0 1 30%;
+  justify-content: center;
+  width: 200px;
+  height: 70px;
+ padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.05);
+
+}
+
