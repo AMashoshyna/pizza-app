@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppComponent } from './app.component';
@@ -16,12 +16,14 @@ import { PizzaQueueService } from './pizza-queue.service';
 import { ConstructorComponent } from './components/constructor/constructor.component';
 import { PizzaConstructorService } from './pizza-constructor.service';
 import { ToppingComponent } from './components/topping/topping.component';
+import { PreviewComponent } from './components/preview/preview.component';
+import { CreatePizzaComponent } from './components/create-pizza/create-pizza.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/queue', pathMatch: 'full' },
   { path: 'queue', component: ShowcaseComponent },
   { path: 'detail/:id', component: PizzaDetailComponent },
-  { path: 'order', component: ConstructorComponent },
+  { path: 'order', component: CreatePizzaComponent },
   { path: 'login', component: LoginComponent, outlet: 'popup' }
   // ,    // {path: '**', component: NotFoundComponent  }
 ];
@@ -35,7 +37,9 @@ const appRoutes: Routes = [
     PizzaCardComponent,
     PizzaDetailComponent,
     ConstructorComponent,
-    ToppingComponent
+    ToppingComponent,
+    PreviewComponent,
+    CreatePizzaComponent
   ],
   imports: [
     BrowserModule,

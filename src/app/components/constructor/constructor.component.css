@@ -1,8 +1,10 @@
-.container {
-    width: 50%;
-    margin-right: 10%;
+:host {
+    /*width: 50%;*/
+    /*margin-right: 10%;*/
     display: flex;
     flex-wrap: wrap;
+    
+    flex: 0 1 40%;
 }
 
 input[type="radio"] {

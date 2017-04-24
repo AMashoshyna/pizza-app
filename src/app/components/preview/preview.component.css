@@ -1,0 +1,13 @@
+:host {
+    /*flex: 0 1 40%;*/
+
+}
+.my-container {
+    margin-left:0;
+    margin-right: 0;
+}
+#pizza-canvas {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
